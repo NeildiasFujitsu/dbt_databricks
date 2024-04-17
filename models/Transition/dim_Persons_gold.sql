@@ -1,0 +1,1 @@
+select * from {{source('dim_Persons_silver')}}
