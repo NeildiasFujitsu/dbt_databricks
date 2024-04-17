@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: dim_Persons_silver
+    description: "Test dbt model"
+    columns:
+        - name: id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
+        - name: fuillname
+          description: "Individual first name and last name"
+          tests:
+              - not_null
+
